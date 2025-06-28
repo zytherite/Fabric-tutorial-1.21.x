@@ -2,6 +2,8 @@ package net.faiz.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.faiz.tutorialmod.block.ModBlocks;
+import net.faiz.tutorialmod.item.ModItemGroups;
 import net.faiz.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,5 +15,7 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }
